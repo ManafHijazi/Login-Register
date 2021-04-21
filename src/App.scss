@@ -1,0 +1,202 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+.form-logo {
+  background-image: url(../src/assets/Images/img-0.png);
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  border-radius: 4rem;
+}
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, hsl(230, 60%, 54%));
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.wrap-login {
+  box-shadow: 3px 20px 70px 1px rgba(0, 0, 0, 0.589);
+  width: 960px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 5rem 8rem 5rem;
+}
+.project-home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9053c7;
+  background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+  background: -moz-linear-gradient(-135deg, #c850c0, hsl(230, 60%, 54%));
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  .page-content {
+    margin-top: -10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .MuiButton-root {
+    background-color: #ffffff;
+    color: #350b42;
+    min-width: 19rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 18px;
+    &:hover {
+      background-color: #8138a3;
+      color: white;
+      border: 5px solid #350b42;
+    }
+  }
+  .page-title {
+    padding: 2rem;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
+.login-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .MuiTypography-h6 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 1rem;
+  }
+  .MuiInputBase-input {
+    min-width: 17rem;
+  }
+  .MuiFormControl-root {
+    margin-bottom: 1rem;
+  }
+  .MuiOutlinedInput-root {
+    border-radius: 1rem;
+    background-color: rgb(240, 240, 240);
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: 1px solid transparent;
+  }
+  .MuiButton-root {
+    background-color: #16162e;
+    color: white;
+    min-width: 19rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 18px;
+    &:hover {
+      background-color: #49499c;
+    }
+  }
+  .form-footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    font-size: 18px;
+    margin-left: -0.8rem;
+    .MuiTypography-colorPrimary {
+      color: #16162e;
+      &:hover {
+        color: #5f0ba8;
+      }
+    }
+    .MuiTypography-root {
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrap-login {
+    padding: 8rem 5rem 8rem 5rem;
+  }
+
+  .login-pic {
+    width: 35%;
+  }
+
+  .login-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-login {
+    padding: 8rem 5rem 8rem 5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .login-pic {
+    display: none;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-login {
+    padding: 8rem 2rem 8rem 2rem;
+    display: flex;
+    justify-content: center;
+    .MuiInputBase-input {
+      min-width: 14rem;
+    }
+    .MuiButton-root {
+      min-width: 16rem;
+    }
+  }
+  .MuiInputBase-input {
+    min-width: 0;
+  }
+}
