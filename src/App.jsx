@@ -29,7 +29,7 @@ const App = () => {
         <>
           <div className='project-home-page'>
             <div className='page-content'>
-              <div className='page-title'>Wellocome Logged in Successfully!</div>
+              <div className='page-title'>Welcome Logged in Successfully!</div>
               <Button onClick={handleLogout}>Logout</Button>
             </div>
           </div>
